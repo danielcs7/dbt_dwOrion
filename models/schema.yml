@@ -1,0 +1,21 @@
+
+version: 2
+
+models:
+  - name: dim_vendedores
+    description: "dimensao dos vendedores do grupo"
+    columns:
+      - name: nk_cod_cliente
+        description: "chave primaria da tabela"
+        tests:
+          - unique
+          - not_null
+  - name: dim_clientes
+    description:  "dimensao dos clientes da empresa"
+    columns:
+      - name: nk_cod_cliente
+        description: "chave primaria da tabeça"
+        tests:
+          - relationships:
+              to: ref('geolocalizacao') 
+              field: nk_prefix_cep        
