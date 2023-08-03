@@ -4,7 +4,12 @@
 
 ## Introdução
 
-Este projeto tem como objetivo a construção de um data warehouse com base em um banco de dados relacional e comparar as diferentes abordagens de modelagem de dados. Os dados utilizados são do dataset de e-commerce disponibilizado pela Olist no Kaggle. A modelagem do banco relacional seguiu a proposta disponibilizada no Kaggle, conforme abaixo:
+Este projeto tem como objetivo a construção de um data warehouse utilizando Pentaho e DBT. O pentaho irá fazer o "EL" e o DBT irá fazer o "L" nas camadas silver e gold. Com isso é possível ver a regra de negócios documentada de forma automática pelo DBT
+
+![dwOrion](https://github.com/danielcs7/dbt_dwOrion/assets/29869300/f4c5fa65-f639-4576-b275-9d61b0aa286e)
+
+
+Os dados utilizados são do dataset de e-commerce disponibilizado pela Olist no Kaggle. A modelagem do banco relacional seguiu a proposta disponibilizada no Kaggle, conforme abaixo:
 ![image](https://github.com/danielcs7/dbt_dwOrion/assets/29869300/4dd6563f-9b55-4839-90f9-90cbd9329f69)
 
 
